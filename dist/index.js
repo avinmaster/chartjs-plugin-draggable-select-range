@@ -102,7 +102,7 @@ var Graphics = new Graphic(states);
 var _default = exports["default"] = {
   id: "draggableSelectRange",
   start: function start(chart, args, options) {
-    if (!chart.config.options.plugins.draggableSelectRange.enable) {
+    if (!chart?.config?.options?.plugins?.draggableSelectRange?.enable) {
       return;
     }
     var canvasElement = chart.canvas;
